@@ -1,0 +1,112 @@
+.mainContainer {
+  background-color: var(--light-background-color, #fff);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.2px;
+  justify-content: center;
+}
+
+@media (max-width: 62rem) {
+  .mainContainer {
+    max-width: 100%;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  min-height: 40rem;
+  width: 100%;
+  align-items: center;
+  padding: 5rem;
+}
+
+@media (max-width: 62rem) {
+  .section {
+    padding: 0 1.25rem;
+  }
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heading {
+  position: relative;
+  color: var(--primary-text-color, #23a6f0);
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5rem;
+  margin-top: 5rem;
+  font-size: 14px;
+}
+
+@media (max-width: 62rem) {
+  .heading {
+    margin-top: 2.5rem;
+  }
+}
+
+.subHeading {
+  position: relative;
+  color: var(--text-color, #252b42);
+  margin-top: 1.875rem;
+  font: 2.5rem/3.125rem Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media (max-width: 62rem) {
+  .subHeading {
+    max-width: 100%;
+  }
+}
+
+.description {
+  position: relative;
+  color: var(--second-text-color, #737373);
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-top: 1.875rem;
+  width: 27.9375rem;
+}
+
+@media (max-width: 62rem) {
+  .description {
+    max-width: 100%;
+  }
+}
+
+.price {
+  position: relative;
+  color: var(--secondary-color-1, #23856d);
+  letter-spacing: 0.1px;
+  margin-top: 1.875rem;
+  font: 1.5rem/1.33 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.button {
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  border-radius: 0.3125rem;
+  border: none;
+  background-color: var(--primary-color, #23a6f0);
+  color: var(--light-text-color, #fff);
+  line-height: 1.57;
+  justify-content: center;
+  margin: 1.875rem 0 0.625rem;
+  padding: 0.9375rem 2.5rem;
+}

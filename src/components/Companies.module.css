@@ -1,0 +1,91 @@
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray-1, #fafafa);
+  width: 100%;
+  padding: 0 3.75rem;
+}
+
+@media (max-width: 991px) {
+  .galleryContainer {
+    padding: 0 1.25rem;
+    margin-top: 48px;
+  }
+}
+
+.galleryWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  gap: 5.25rem;
+  padding: 3.125rem 1.9375rem;
+}
+
+@media (max-width: 991px) {
+  .galleryWrapper {
+    flex-wrap: wrap;
+    padding: 0 1.25rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+}
+
+.img {
+  aspect-ratio: 3.03;
+  object-fit: auto;
+  object-position: center;
+  width: 6.4375rem;
+  align-self: stretch;
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.img2 {
+  aspect-ratio: 1.41;
+  object-fit: auto;
+  object-position: center;
+  width: 5.1875rem;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.img3 {
+  aspect-ratio: 1.35;
+  object-fit: auto;
+  object-position: center;
+  width: 6.375rem;
+  align-self: stretch;
+  max-width: 100%;
+}
+
+.img4 {
+  aspect-ratio: 2.44;
+  object-fit: auto;
+  object-position: center;
+  width: 6.4375rem;
+  align-self: stretch;
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.img5 {
+  aspect-ratio: 1.67;
+  object-fit: auto;
+  object-position: center;
+  width: 6.5rem;
+  align-self: stretch;
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.img6 {
+  aspect-ratio: 1.05;
+  object-fit: auto;
+  object-position: center;
+  width: 4.75rem;
+  align-self: stretch;
+  margin: auto 0;
+}

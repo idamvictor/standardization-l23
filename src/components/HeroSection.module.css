@@ -1,0 +1,150 @@
+/* ================================================HERO SECTION ============================================= */
+.mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-background-color, #fff);
+  padding: 5rem 3.75rem;
+}
+
+@media (max-width: 991px) {
+  .mainSection {
+    padding: 0 1.25rem;
+  }
+}
+
+.mainContainer {
+  margin-top: 0.25rem;
+  width: 100%;
+  max-width: 71.625rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+@media (max-width: 991px) {
+  .mainContainer {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0;
+  }
+}
+
+.imageColumn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .imageColumn {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainImg {
+  aspect-ratio: 0.74;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+  
+}
+
+.itemsColumn {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 991px) {
+  .itemsColumn {
+    width: 100%;
+    gap: 0;
+  }
+}
+
+.subItemsRow {
+  display: flex;
+  gap: 1.25rem;
+  flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+  .subItemsRow {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.itemCard {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: var(--text-color, #252b42);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemImg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.itemDetails {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin-bottom: 3.125rem;
+}
+
+.itemDetails1{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@media (max-width: 991px) {
+  .itemDetails {
+    margin-bottom: 2.5rem;
+    padding: 0 1.25rem;
+  }
+  .itemCard {
+    height: 330px;
+  }
+}
+
+.itemCount {
+  color: var(--success-text-color, #2dc071);
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+}
+
+.itemCategory {
+  letter-spacing: 0.1px;
+  margin-top: 0.3125rem;
+  font: 1.5rem/133% Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.itemButton {
+  font-family: Montserrat, sans-serif;
+  margin-top: 0.3125rem;
+  background: none;
+  border: none;
+  color: var(--text-color, #252b42);
+  cursor: pointer;
+}

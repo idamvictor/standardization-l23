@@ -1,0 +1,22 @@
+.starRating {
+  display: flex;
+  align-items: center;
+}
+
+.filledStar {
+  color: gold;
+  margin-right: 2px;
+  font-size: 20px;
+}
+
+.halfStar {
+  color: gold;
+  margin-right: 2px;
+  font-size: 20px;
+}
+
+.emptyStar {
+  color: #ddd;
+  margin-right: 2px;
+  font-size: 20px;
+}

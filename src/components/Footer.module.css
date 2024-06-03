@@ -1,0 +1,159 @@
+:root {
+  --light-text-color: #ffffff;
+  --light-gray-1: #fafafa;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --primary-color: #23a6f0;
+}
+
+.header {
+  background-color: var(--light-gray-1);
+  padding: 2.5rem 3.75rem 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContent {
+  max-width: 66rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 4.3125rem;
+}
+
+.brandName {
+  color: var(--text-color);
+  font: 700 1.5rem/1.33 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: auto 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.socialImg {
+  aspect-ratio: 1 / 1;
+  object-fit: auto;
+  object-position: center;
+  width: 1.5rem;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 3.1875rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerContent {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  max-width: 66rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: var(--second-text-color);
+  line-height: 1.5rem;
+}
+
+.sectionTitle {
+  color: var(--text-color);
+  font: 700 1rem/1.5 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.infoItem {
+  margin-top: 0.625rem;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.subscribeForm {
+  display: flex;
+  margin-top: 1.25rem;
+  border-radius: 0.3125rem;
+  background-color: #f9f9f9;
+  gap: 1.25rem;
+  border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.inputEmail {
+  border: none;
+  padding: ;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--second-text-color);
+  flex: 1;
+}
+
+.btnSubscribe {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0 0.3125rem 0.3125rem 0;
+  font-family: Montserrat, sans-serif;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.contactNote {
+  color: var(--second-text-color);
+  margin-top: 0.625rem;
+  font: 0.75rem/2.33 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.footerNote {
+  justify-content: center;
+  align-items: start;
+  background-color: #fafafa;
+  width: 100%;
+  color: var(--second-text-color);
+  padding: 1.5625rem 3.75rem 1.5625rem 12.1875rem;
+  font: 700 0.875rem/1.5rem Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 0 1.25rem;
+    margin-top: 32px;
+  }
+  .headerContent {
+    padding-right: 1.25rem;
+  }
+  .footer {
+    padding: 0 1.25rem;
+  }
+  .footerNote {
+    padding: 0 1.25rem 0 1.875rem;
+  }
+  .footerContent{
+    flex-direction: column;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

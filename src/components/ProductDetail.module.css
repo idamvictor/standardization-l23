@@ -1,0 +1,346 @@
+/* ================================================Product detail v2============================================== */
+
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 3.75rem 3rem;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .mainWrapper {
+    padding: 0 1.25rem;
+  }
+}
+
+.container {
+  display: flex;
+  max-width: 65.625rem;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.imageColumn,
+.detailsColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .imageColumn,
+  .detailsColumn {
+    width: 100%;
+    margin-top: 1.875rem;
+  }
+}
+
+.imageFigure {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0.125rem 0;
+}
+
+.productImage {
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 0.93 / 1;
+}
+
+.productDetailsWrapper {
+  padding: 1.3125rem 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .productDetailsWrapper {
+    padding: 0 1.25rem;
+  }
+}
+
+.productTitle {
+  color: var(--text-color, #252b42);
+  font: 400 1.25rem/1.5 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.reviewsWrapper {
+  display: flex;
+  align-items: start;
+  margin-top: 1rem;
+  gap: 0.625rem;
+}
+
+.starsWrapper {
+  display: flex;
+  gap: 0.3125rem;
+}
+
+.reviewStar {
+  width: 1.375rem;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.reviewCount {
+  color: var(--second-text-color, #737373);
+  font: 700 0.875rem/1.5rem Montserrat, -apple-system, Roboto, Helvetica,
+    sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.price {
+  color: var(--text-color, #252b42);
+  font: 700 1.5rem/1.33 Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-top: 1.5625rem;
+  letter-spacing: 0.1px;
+}
+
+.availabilityWrapper {
+  display: flex;
+  align-items: start;
+  margin-top: 0.5rem;
+  gap: 0.3125rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.availabilityText {
+  color: var(--second-text-color, #737373);
+}
+
+.availabilityStatus {
+  color: var(--primary-color, #23a6f0);
+}
+
+.horizontalLine {
+  border: 1px solid rgba(189, 189, 189, 1);
+  background-color: #bdbdbd;
+  margin-top: 7.375rem;
+  height: 1px;
+}
+
+@media (max-width: 991px) {
+  .horizontalLine {
+    margin-top: 2.5rem;
+  }
+}
+
+.colorsWrapper {
+  display: flex;
+  align-items: start;
+  margin-top: 1.8125rem;
+  gap: 0.625rem;
+}
+
+.colorPrimary,
+.colorSuccess,
+.colorAlert,
+.colorDark {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+}
+
+.colorPrimary {
+  background-color: var(--primary-color, #23a6f0);
+}
+
+.colorSuccess {
+  background-color: var(--success-color, #2dc071);
+}
+
+.colorAlert {
+  background-color: var(--alert-color, #e77c40);
+}
+
+.colorDark {
+  background-color: var(--dark-background-color, #252b42);
+}
+
+.optionsWrapper {
+  display: flex;
+  align-items: start;
+  margin-top: 4.1875rem;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  color: var(--light-text-color, #fff);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5rem;
+  padding-right: 5rem;
+}
+
+@media (max-width: 991px) {
+  .optionsWrapper {
+    flex-wrap: wrap;
+    padding-right: 1.25rem;
+    margin-top: 2.5rem;
+  }
+}
+
+.selectOptionsButton {
+  display: block;
+  border-radius: 0.3125rem;
+  background-color: var(--primary-color, #23a6f0);
+  justify-content: center;
+  padding: 0.625rem 1.25rem;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  border: none;
+}
+
+.productOption {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border: 1px solid rgba(232, 232, 232, 1);
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  color: black;
+  border: 1px solid gray;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.iconButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.iconButton:hover:not(:disabled) {
+  background-color: lightgrey;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.added {
+  color: #fff;
+}
+
+.favorited {
+  color: #fff;
+}
+.eyeIconContainer {
+  padding: 4px 7px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.eyeIcon {
+  width: 24px;
+  height: 24px;
+  color: grey;
+}
+
+/* =============================================================== REVIEW BAR ================================================= */
+
+.reviewBarContainer {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid darkgrey;
+  max-width: 71.625rem;
+  margin: 0 auto;
+}
+
+.description {
+  color: var(--second-text-color, #737373);
+  text-align: center;
+  /* link */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+  padding: 24px;
+}
+
+/* ========================================== */
+.imageFigure {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+}
+
+.arrowButton:first-of-type {
+  left: 10px;
+}
+
+.arrowButton:last-of-type {
+  right: 10px;
+}
+
+/* ======================== Image thumbnails =================================================== */
+
+.thumbnailContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+  border: 2px solid #23a6f0;
+}
+
+.activeThumbnail {
+  border: 2px solid #23a6f0;
+}
+
+
+/* ======================================== LOADER ====================================================== */
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

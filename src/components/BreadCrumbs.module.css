@@ -1,0 +1,41 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.menuItem.active {
+  font-weight: bold;
+  color: #000;
+}
+
+.menuItem.inactive {
+  color: #666;
+}
+
+.separatorIcon {
+  margin: 0 5px;
+}

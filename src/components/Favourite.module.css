@@ -1,0 +1,59 @@
+.productCard1 {
+  align-items: center;
+  list-style: none;
+}
+
+.productImage {
+  width: 100px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+.productName {
+  color: #2b2b2b;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.048px;
+}
+
+.productPrice {
+  color: #121517;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.032px;
+}
+
+/* Cart.module.css */
+.productButton {
+  background-color: #f8f9fa; /* Example background color */
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #23a6f0;
+}
+
+.productButton:hover {
+  background-color: #e2e6ea; /* Example hover background color */
+}
+
+.productBottonText {
+  margin-left: 8px;
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cardTitle {
+  color: #121517;
+    font: 600 1.5rem / 140% Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
