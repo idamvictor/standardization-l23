@@ -6,12 +6,7 @@ import FavoritePage from "./pages/FavoritePage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 
-// import ProductDetail from "./components/ProductDetail";
-// import Cart from "./components/Cart";
-
-
-
-function App() { 
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -20,8 +15,6 @@ function App() {
           <Route path="ProductPage/:id" element={<ProductPage />} />
           <Route path="CartPage" element={<CartPage />} />
           <Route path="/FavoritePage" element={<FavoritePage />} />
-          {/* <Route path="/products/:id" element={<ProductDetail />} />
-          <Route path="Cart" element={<Cart />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
